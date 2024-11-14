@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie App</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>MovieHub</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Watchlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="search">
+            <input type="text" placeholder="Type Your Movie Name">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="container" id="popular-movies-section">
+        <h3> Popular Movies for Today </h3>
+    </div>
+    
+    <div class="container">
+        <div class="movies-container favorites">
+            <div class="movies-grid">
+                <div class="card" data-id="123456">
+                    <div class="img">
+                        <img src="img/sm.png" alt="kino goi">
+                    </div>
+                    <div class="info">
+                        <h2>Spider-Man</h2>
+                        <div class="single-info">
+                            <span>Rate: </span>
+                            <span>10 / 10</span>
+                        </div>
+                        <div class="single-info">
+                            <span>Release Date: </span>
+                            <span>23-03-2008</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="movies-container favorites">
+            <div class="movies-grid">
+                <div class="card" data-id="123456">
+                    <div class="img">
+                        <img src="img/superman.png" alt="kino goi">
+                    </div>
+                    <div class="info">
+                        <h2>Superman</h2>
+                        <div class="single-info">
+                            <span>Rate: </span>
+                            <span>10 / 10</span>
+                        </div>
+                        <div class="single-info">
+                            <span>Release Date: </span>
+                            <span>12-06-2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="movies-container favorites">
+            <div class="movies-grid">
+                <div class="card" data-id="123456">
+                    <div class="img">
+                        <img src="img/badland-hunters.png" alt="kino goi">
+                    </div>
+                    <div class="info">
+                        <h2>Badland-Hunters</h2>
+                        <div class="single-info">
+                            <span>Rate: </span>
+                            <span>10 / 10</span>
+                        </div>
+                        <div class="single-info">
+                            <span>Release Date: </span>
+                            <span>10-04-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="movies-container favorites">
+            <div class="movies-grid">
+                <div class="card" data-id="123456">
+                    <div class="img">
+                        <img src="img/kino.png" alt="kino goi">
+                    </div>
+                    <div class="info">
+                        <h2>Sadaqshy</h2>
+                        <div class="single-info">
+                            <span>Rate: </span>
+                            <span>10 / 10</span>
+                        </div>
+                        <div class="single-info">
+                            <span>Release Date: </span>
+                            <span>11-10-2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="movies-container favorites">
+            <div class="movies-grid">
+                <div class="card" data-id="123456">
+                    <div class="img">
+                        <img src="img/f4.png" alt="kino goi">
+                    </div>
+                    <div class="info">
+                        <h2>Fantastic FOUR</h2>
+                        <div class="single-info">
+                            <span>Rate: </span>
+                            <span>10 / 10</span>
+                        </div>
+                        <div class="single-info">
+                            <span>Release Date: </span>
+                            <span>10-04-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+<!-- <div class="container">
+        <div class="movies-container trending">
+            <div class="movies-grid">
+                <div class="card" data-id="123456">
+                    <div class="img">
+                        <img src="img/mg.png" alt="kino etin">
+                    </div>
+                    <div class="info">
+                        <h2>Mind-Games</h2>
+                        <div class="single-info">
+                            <span>Rate: </span>
+                            <span>10 / 10</span>
+                        </div>
+                        <div class="single-info">
+                            <span>Release Date: </span>
+                            <span>10-04-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div id="movieModal" class="popup-container">
+        <div class="content">
+            <div class="left">
+                <div class="poster-img">
+                    <img id="modal-image" src="" alt="Movie Poster">
+                </div>
+            </div>
+            <div class="right">
+                <h2 id="modal-title">Movie Title</h2>
+                <div class="single-info">
+                    <span>Rate: </span>
+                    <span id="modal-rate">10/10</span>
+                </div>
+                <div class="single-info">
+                    <span>Release Date: </span>
+                    <span id="modal-release-date">23-03-2008</span>
+                </div>
+            </div>
+        </div>
+        <span class="exit" id="closeModal">X</span>
+    </div>
+
+    <div class="movies-grid" id="movies-grid"></div>
+
+    <div id="movie-details-modal" class="modal">
+    <div id="movie-details-content"></div>
+    <button class="close-btn" onclick="closeModal()">Exit</button>
+    </div>
+
+
+    <div class="container">
+        <h3>Watchlist:</h3>
+    </div>
+    <div class="container">
+        <div class="movies-container watchlist">
+            <div class="movies-grid" id="watchlist-grid"></div>
+        </div>
+    </div>
+
+<footer>
+    <div class="footer-content">
+        <p> &copy; 2024 Movie Search App. All Rights Reserved.</p>
+    </div>
+</footer>
+                                       <script src="script.js"></script>
+</body>
+</html>
