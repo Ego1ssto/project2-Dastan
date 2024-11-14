@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #225b90; */
+    background-image: url('media/Download\ premium\ psd\ _\ image\ of\ Van\ Gogh-inspired\ The\ Starry\ Night\ background\,\ vintage\ painting\ psd\ by\ Benjamas\ about\ starry\ night\ van\ gogh\,\ vincent\ van\ gogh\,\ starry\ night\,\ van\ gogh\,\ and\ frame\ 6256389.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background-color: #354a60;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 620px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: cursive;
+}
+
+.search-sec{
+    top: 30%;
+    left: 50%;
+}
+
+#search-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    top: 30%;
+    left: 50%;
+}
+
+#search-section input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+#search-section button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#search-section button:hover {
+    background-color: #0056b3;
+    transition: 200ms ease-in-out;
+    transform: scale(1.05);
+}
+
+video {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#unit-toggle-section {
+    margin-bottom: 20px;
+}
+
+#unit-toggle-section label {
+    font-size: 14px;
+}
+#weather-display {
+    margin-bottom: 20px;
+}
+
+#temp-div {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#weather-info {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#humidity-wind {
+    font-size: 14px;
+    color: #555;
+}
+/* 
+
+#forecast-section{
+    background-color:#555;
+    border-radius: 8px;
+    padding: 70px 30px;
+    margin-top: 60px;
+    display: flex;
+} */
+
+#forecast-section h2,
+#hourly-forecast-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#forecast,
+#hourly-forecast {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.forecast-item {
+    background-color: #191616;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 70px;
+}
+
+.forecast-item p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.forecast-item img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    #forecast,
+    #hourly-forecast {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forecast-item {
+        width: 100%;
+    }
+}
